@@ -31,6 +31,7 @@ public class SimpleFilter extends ZuulFilter {
         HttpServletRequest request = ctx.getRequest();
 
         log.info(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));
+        log.info("Authorization : {}", request.getHeader("Authorization"));
 
         return null;
     }

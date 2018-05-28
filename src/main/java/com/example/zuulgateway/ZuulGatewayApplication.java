@@ -23,6 +23,11 @@ public class ZuulGatewayApplication {
         return new SimpleFilter();
     }
 
+//    @Bean
+//    public Oauth2TokenRelayFilter oauth2TokenRelayFilter() {
+//        return new Oauth2TokenRelayFilter();
+//    }
+
     @Bean
     public RequestInterceptor getUserFeignClientInterceptor() {
         return new UserFeignClientInterceptor();
